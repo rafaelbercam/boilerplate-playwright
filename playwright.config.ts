@@ -32,14 +32,12 @@ const defaultConfig: PlaywrightTestConfig = {
 
             },
             //dependencies: ['setup']
-        }
-        
+        }       
     ],
     reporter: [
         ['line'], // Exibe o progresso no terminal
         ['html', { outputFolder: 'playwright-report', open: 'on-failure' }] // Gera um relatório HTML
     ]
-
 };
 
 const devConfig: TestConfig = {
