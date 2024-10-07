@@ -12,11 +12,8 @@ test.describe('Home Page Validation', () => {
 
     test('should register a new user and validate success message', async ({ homePage }) => {
         await homePage.goto();
-
         const user = UserFactory.createUser();
         await homePage.register(user.email, user.name, user.password);
-
-        // Valida se o texto de sucesso contém "criada com sucesso"
         await homePage.validatePartialText('criada com sucesso');
     });
 
