@@ -25,6 +25,8 @@ jobs:
       # Step 3: Install dependencies
       - name: Install dependencies
         run: npm install
+      - name: Install Playwright
+        run: npx playwright install 
 
       # Step 4: Run Playwright tests
       - name: Run Playwright tests
