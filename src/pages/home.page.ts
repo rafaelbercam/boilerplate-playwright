@@ -84,7 +84,7 @@ export class HomePage {
         await this.buttonRegisterConfirmation.click();
     }
 
-    async validatePartialText(text) {
+    async validatePartialText(text: string) {
         await expect(this.modalText).toContainText(text);
     }
 
