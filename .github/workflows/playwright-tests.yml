@@ -44,5 +44,5 @@ jobs:
         if: success() # Only deploy if tests pass
         uses: peaceiris/actions-gh-pages@v3
         with:
-            github_token: ${{ secrets.PAT_TOKEN }}
-            publish_dir: ./playwright-report
+           github_token: ${{ secrets.PAT_TOKEN }}
+           publish_dir: ./playwright-report
