@@ -1,7 +1,7 @@
 {
   "name": "boilerplate-playwright",
   "version": "1.0.0",
-  "description": "",
+  "description": "Projeto base para automação de testes",
   "main": "index.js",
   "scripts": {
     "test:e2e": "npx playwright test --project=defaultProject",
@@ -9,8 +9,8 @@
     "test:debug": "npx playwright test --project=defaultProject --debug"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Rafael Berçam Medeiros",
+  "license": "MIT",
   "dependencies": {
     "@faker-js/faker": "^9.0.3",
     "@playwright/test": "^1.47.2",
