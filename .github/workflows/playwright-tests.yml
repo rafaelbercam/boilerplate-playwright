@@ -39,7 +39,8 @@ jobs:
         with:
           name: playwright-report
           path: ./playwright-report # Caminho onde o relatório HTML é gerado
-    # Step 7: Deploy Playwright report to GitHub Pages
+          
+      # Step 6: Deploy Playwright report to GitHub Pages
       - name: Deploy Playwright report to GitHub Pages
         if: success() # Only deploy if tests pass
         uses: peaceiris/actions-gh-pages@v3
